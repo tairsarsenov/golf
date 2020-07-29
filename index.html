@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>Professional Golfer</title>
+<head>      
+    <link rel="stylesheet" href=style.css>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#aboutMe">About Me</a>
+  <a href="#goals">Goals</a>
+  <a href="#awards">Awards</a>
+    <a href="trainingGuides.html">Training Guides</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   
+ <div style="margin-top: 90px; margin-bottom: 70px">  
+   
+     <h1 id="home">Tair Sarsenov Golfer</h1>
+
+
+     <div class="row">
+        <div class="column">
+         <img src="butch%20harmon1.jpg" alt= "golfer" style="width:100%">
+         </div>
+
+        <div class="column">
+         <img src="golf%20net1.jpg" alt="golf net" style="width:100%">
+         </div>
+
+
+    </div>  
+     <div id="aboutMe">
+
+        <h2>About Me</h2>
+        <p>Hi!
+
+        My name is Tair Sarsenov and I am a 15 year old golfer from Almaty, Kazakhstan. Last year I moved to the USA, where I am a rising sophomore at the Peddie School in New Jersey.</p>
+
+        <p>I have been playing golf since I was 6 years old, when I followed my big brother to the golf course and begged him to let me hit some balls. Since then, I have been hooked and, thankfully, I&#39ve improved a lot since I first destroyed the green with my brother. </p>
+
+        <p>Since I started playing, I have taken every opportunity to improve my game including: training bootcamps at IMG Academy, lessons at Core Golf Academy, and, this year, I was fortunate enough to receive coaching from golfing legend - Butch Harmon.</p>
+
+        <p>Golf is my passion and it is my ambition to become a top player and eventually a college recruit. </p>
+
+         <p> I hope you enjoy my site!</p>
+
+       <p> Tair
+        </p>
+     </div>
+     
+    
+    <div id="goals" class=goalsClass>
+        <h3>Goals</h3>
+        <div class="row">
+        <div class="column">
+         <img src="Sawgrass1.png" alt="golfer" style="width:100%">
+         </div>
+
+        <div class="column">
+         <p>Golf is really important to me and one of the best parts about being a golfer is that there is always something to learn. I am always motivated to improve and can continue to develop my game throughout my life.</p> 
+
+        <p>My short-term goals in golf are quite simple - I want to continue playing for my school team and hopefully become Team Captain one day. Playing as part of a team is an amazing experience and I love the camaraderie of being part of a group with a common goal. We challenge each other and push ourselves to be the best players that we can be. </p>
+
+       <p> In the future I hope to be a successful college golf recruit at a Division I university and continue to improve whilst pursuing a college education. I strongly believe that golf has already equipped me with the dedication and determination to succeed.</p>
+
+        <p>I’d love the opportunity to play golf at a professional level and it is something that I plan to continue working towards. </p>
+         </div>
+        </div>
+    </div>
+
+        <div id="awards"><h3>Awards</h3></div>
+     
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Kazakhstan%20Open%201.png" style="width:100%">
+    <div class="text">Kazakhstan Open</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Zhailjau%201.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Stanford%201.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+    
+   <!-- <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="Kazakhstan%20Open%201.png" style="width:100%">
+    <div class="text">Kazakhstan Open</div>
+  </div> -->
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <!-- <span class="dot" onclick="currentSlide(4)"></span>-->
+</div>
+     
+    <div class="footer">
+      <p id="footerName">Tair Sarsenov - tairsarsenov@gmail.com</p>
+    </div>
+ </div>
+   
+</body>
+    <script>
+        document.getElementById("footerName").addEventListener("mouseover",changeColor);
+        document.getElementById("footerName").addEventListener("mouseout",changeBack);
+       
+        function changeColor(){
+            document.getElementById("footerName").style.color="black";
+        }
+        function changeBack(){
+            document.getElementById("footerName").style.color="white";
+        }
+        function showMe(text){
+            document.getElementById("p1").innerHTML=text;
+        }
+        
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        
+       var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        } 
+        changeOnTimer();
+        function changeOnTimer(){
+            slideIndex++;
+            showSlides(slideIndex);
+            setTimeout(changeOnTimer, 5000);
+        }
+        
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+        }
+
+    </script>
+</html>
